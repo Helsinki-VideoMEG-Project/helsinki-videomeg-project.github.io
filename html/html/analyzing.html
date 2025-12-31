@@ -3,10 +3,10 @@
   <head><meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width,initial-scale=1"/>
     <meta name="color-scheme" content="light dark"><meta name="viewport" content="width=device-width, initial-scale=1" />
-<link rel="index" title="Index" href="genindex.html" /><link rel="search" title="Search" href="search.html" /><link rel="next" title="Project Overview" href="overview.html" />
+<link rel="index" title="Index" href="genindex.html" /><link rel="search" title="Search" href="search.html" /><link rel="next" title="Contributing to the Project" href="contributing.html" /><link rel="prev" title="Recording video-MEG" href="recording.html" />
 
     <!-- Generated with Sphinx 8.2.3 and Furo 2024.08.06 -->
-        <title>Helsinki VideoMEG Project documentation</title>
+        <title>Analyzing video-MEG - Helsinki VideoMEG Project documentation</title>
       <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=8f2a1f02" />
     <link rel="stylesheet" type="text/css" href="_static/styles/furo.css?v=354aac6f" />
     <link rel="stylesheet" type="text/css" href="_static/styles/furo-extensions.css?v=302659d7" />
@@ -166,7 +166,7 @@
       </label>
     </div>
     <div class="header-center">
-      <a href="#"><div class="brand">Helsinki VideoMEG Project  documentation</div></a>
+      <a href="index.html"><div class="brand">Helsinki VideoMEG Project  documentation</div></a>
     </div>
     <div class="header-right">
       <div class="theme-toggle-container theme-toggle-header">
@@ -187,7 +187,7 @@
   <aside class="sidebar-drawer">
     <div class="sidebar-container">
       
-      <div class="sidebar-sticky"><a class="sidebar-brand" href="#">
+      <div class="sidebar-sticky"><a class="sidebar-brand" href="index.html">
   
   
   <span class="sidebar-brand-text">Helsinki VideoMEG Project  documentation</span>
@@ -199,10 +199,10 @@
 </form>
 <div id="searchbox"></div><div class="sidebar-scroll"><div class="sidebar-tree">
   <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
-<ul>
+<ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="overview.html">Project Overview</a></li>
 <li class="toctree-l1"><a class="reference internal" href="recording.html">Recording video-MEG</a></li>
-<li class="toctree-l1"><a class="reference internal" href="analyzing.html">Analyzing video-MEG</a></li>
+<li class="toctree-l1 current current-page"><a class="current reference internal" href="#">Analyzing video-MEG</a></li>
 <li class="toctree-l1"><a class="reference internal" href="contributing.html">Contributing to the Project</a></li>
 </ul>
 
@@ -224,7 +224,7 @@
         </a>
         <div class="content-icon-container">
           <div class="view-this-page">
-  <a class="muted-link" href="_sources/index.rst.txt" title="View this page">
+  <a class="muted-link" href="_sources/analyzing.rst.txt" title="View this page">
     <svg><use href="#svg-eye"></use></svg>
     <span class="visually-hidden">View this page</span>
   </a>
@@ -244,23 +244,17 @@
           </label>
         </div>
         <article role="main" id="furo-main-content">
-          <section id="helsinki-videomeg-project">
-<h1>Helsinki VideoMEG Project<a class="headerlink" href="#helsinki-videomeg-project" title="Link to this heading">¶</a></h1>
-<p>This is a software for recording video and audio during MEG experiments.</p>
-<div class="toctree-wrapper compound">
-<p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="overview.html">Project Overview</a></li>
-<li class="toctree-l1"><a class="reference internal" href="recording.html">Recording video-MEG</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="recording.html#assemble-the-hardware">Assemble the hardware</a></li>
-<li class="toctree-l2"><a class="reference internal" href="recording.html#install-the-software">Install the software</a></li>
-<li class="toctree-l2"><a class="reference internal" href="recording.html#perform-the-recording">Perform the recording</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="analyzing.html">Analyzing video-MEG</a></li>
-<li class="toctree-l1"><a class="reference internal" href="contributing.html">Contributing to the Project</a></li>
-</ul>
-</div>
+          <section id="analyzing-video-meg">
+<h1>Analyzing video-MEG<a class="headerlink" href="#analyzing-video-meg" title="Link to this heading">¶</a></h1>
+<p>Although the Helsinki VideoMEG Project records audio and video separately from the MEG data, it timestamps all the data streams, which allows aligning the all data to the common timeline.</p>
+<p>Here are your options for analyzing the video-MEG:</p>
+<blockquote>
+<div><ol class="arabic simple">
+<li><p>If you are writing Python scripts for analysing your data, you can use the libraries provided by the project for importing audio and video and synchronizing it to MEG traces.</p></li>
+<li><p>You can check out <a class="reference external" href="https://github.com/ttaiv/mne-videobrowser">mne-videobrowser</a> tool.</p></li>
+<li><p>If none of the above works for you, you can at least export the video and audio to the avi format so you can review them without the MEG traces. This can be done with the Python video-MEG analysis tools.</p></li>
+</ol>
+</div></blockquote>
 </section>
 
         </article>
@@ -268,16 +262,26 @@
       <footer>
         
         <div class="related-pages">
-          <a class="next-page" href="overview.html">
+          <a class="next-page" href="contributing.html">
               <div class="page-info">
                 <div class="context">
                   <span>Next</span>
                 </div>
-                <div class="title">Project Overview</div>
+                <div class="title">Contributing to the Project</div>
               </div>
               <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
             </a>
-          
+          <a class="prev-page" href="recording.html">
+              <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
+              <div class="page-info">
+                <div class="context">
+                  <span>Previous</span>
+                </div>
+                
+                <div class="title">Recording video-MEG</div>
+                
+              </div>
+            </a>
         </div>
         <div class="bottom-of-page">
           <div class="left-details">

@@ -13,4 +13,6 @@ This is a software for recording video and audio during MEG experiments.
    :caption: Contents:
 
    overview
+   recording
+   analyzing
    contributing
