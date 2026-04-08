@@ -3,10 +3,10 @@
   <head><meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width,initial-scale=1"/>
     <meta name="color-scheme" content="light dark"><meta name="viewport" content="width=device-width, initial-scale=1" />
-<link rel="index" title="Index" href="genindex.html" /><link rel="search" title="Search" href="search.html" /><link rel="next" title="Analyzing video-MEG" href="analyzing.html" /><link rel="prev" title="Install the software" href="software.html" />
+<link rel="index" title="Index" href="genindex.html" /><link rel="search" title="Search" href="search.html" /><link rel="next" title="Install the software" href="software.html" /><link rel="prev" title="Project Overview" href="overview.html" />
 
     <!-- Generated with Sphinx 8.2.3 and Furo 2024.08.06 -->
-        <title>Perform the recording - Helsinki VideoMEG Project documentation</title>
+        <title>Assemble the hardware - Helsinki VideoMEG Project documentation</title>
       <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=8f2a1f02" />
     <link rel="stylesheet" type="text/css" href="_static/styles/furo.css?v=354aac6f" />
     <link rel="stylesheet" type="text/css" href="_static/styles/furo-extensions.css?v=302659d7" />
@@ -178,7 +178,7 @@
           <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
         </button>
       </div>
-      <label class="toc-overlay-icon toc-header-icon no-toc" for="__toc">
+      <label class="toc-overlay-icon toc-header-icon" for="__toc">
         <div class="visually-hidden">Toggle table of contents sidebar</div>
         <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
       </label>
@@ -201,9 +201,9 @@
   <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="overview.html">Project Overview</a></li>
-<li class="toctree-l1"><a class="reference internal" href="hardware.html">Assemble the hardware</a></li>
+<li class="toctree-l1 current current-page"><a class="current reference internal" href="#">Assemble the hardware</a></li>
 <li class="toctree-l1"><a class="reference internal" href="software.html">Install the software</a></li>
-<li class="toctree-l1 current current-page"><a class="current reference internal" href="#">Perform the recording</a></li>
+<li class="toctree-l1"><a class="reference internal" href="recording.html">Perform the recording</a></li>
 <li class="toctree-l1"><a class="reference internal" href="analyzing.html">Analyzing video-MEG</a></li>
 <li class="toctree-l1"><a class="reference internal" href="contributing.html">Contributing to the Project</a></li>
 </ul>
@@ -226,7 +226,7 @@
         </a>
         <div class="content-icon-container">
           <div class="view-this-page">
-  <a class="muted-link" href="_sources/recording.rst.txt" title="View this page">
+  <a class="muted-link" href="_sources/hardware.rst.txt" title="View this page">
     <svg><use href="#svg-eye"></use></svg>
     <span class="visually-hidden">View this page</span>
   </a>
@@ -240,15 +240,23 @@
               <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
             </button>
           </div>
-          <label class="toc-overlay-icon toc-content-icon no-toc" for="__toc">
+          <label class="toc-overlay-icon toc-content-icon" for="__toc">
             <div class="visually-hidden">Toggle table of contents sidebar</div>
             <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
           </label>
         </div>
         <article role="main" id="furo-main-content">
-          <section id="perform-the-recording">
-<h1>Perform the recording<a class="headerlink" href="#perform-the-recording" title="Link to this heading">¶</a></h1>
-<p>Once the AV computer is set up and connected to your MEG device, you can record the audio and video of your subject during the MEG measurement. You control the video recording (i.e. start and stop the recording, adjust the cameras’ shutter/gain/other parameters, etc.) from the AV computer independently of the MEG acquisition. That is, if you want the video of the subject recorded during a certain MEG session, you have to start the recording at the beginning of the session and stop it at the end of the session manually. The AV computer records the video and audio in on it’s local hard drive.</p>
+          <section id="assemble-the-hardware">
+<h1>Assemble the hardware<a class="headerlink" href="#assemble-the-hardware" title="Link to this heading">¶</a></h1>
+<p>To get the video recording running, first you need to assemble a video-recording computer, also called AV (for Audio-Visual) computer. AV computer is basically a normal PC with an external USB sound interface and one or more USB3 Vision cameras connected to it. It is completely separate from your MEG device; the only link between the two is the cable that connects the parallel port output of the AV computer to the trigger input of the MEG for the synchronization purposes. All the necessary hardware (computer, cameras, cables, etc.) are relatively inexpensive off-the-shelf products, and the assembly is pretty straightforward.</p>
+<section id="cameras">
+<h2>Cameras<a class="headerlink" href="#cameras" title="Link to this heading">¶</a></h2>
+<p>Alvium 1800 U-291c</p>
+</section>
+<section id="sound-interface">
+<h2>Sound interface<a class="headerlink" href="#sound-interface" title="Link to this heading">¶</a></h2>
+<p>Focusrite Scarlett 18i20 [3rd Gen]</p>
+</section>
 </section>
 
         </article>
@@ -256,23 +264,23 @@
       <footer>
         
         <div class="related-pages">
-          <a class="next-page" href="analyzing.html">
+          <a class="next-page" href="software.html">
               <div class="page-info">
                 <div class="context">
                   <span>Next</span>
                 </div>
-                <div class="title">Analyzing video-MEG</div>
+                <div class="title">Install the software</div>
               </div>
               <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
             </a>
-          <a class="prev-page" href="software.html">
+          <a class="prev-page" href="overview.html">
               <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
               <div class="page-info">
                 <div class="context">
                   <span>Previous</span>
                 </div>
                 
-                <div class="title">Install the software</div>
+                <div class="title">Project Overview</div>
                 
               </div>
             </a>
@@ -294,8 +302,28 @@
         
       </footer>
     </div>
-    <aside class="toc-drawer no-toc">
+    <aside class="toc-drawer">
       
+      
+      <div class="toc-sticky toc-scroll">
+        <div class="toc-title-container">
+          <span class="toc-title">
+            On this page
+          </span>
+        </div>
+        <div class="toc-tree-container">
+          <div class="toc-tree">
+            <ul>
+<li><a class="reference internal" href="#">Assemble the hardware</a><ul>
+<li><a class="reference internal" href="#cameras">Cameras</a></li>
+<li><a class="reference internal" href="#sound-interface">Sound interface</a></li>
+</ul>
+</li>
+</ul>
+
+          </div>
+        </div>
+      </div>
       
       
     </aside>

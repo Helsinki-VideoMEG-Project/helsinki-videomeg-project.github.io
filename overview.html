@@ -3,7 +3,7 @@
   <head><meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width,initial-scale=1"/>
     <meta name="color-scheme" content="light dark"><meta name="viewport" content="width=device-width, initial-scale=1" />
-<link rel="index" title="Index" href="genindex.html" /><link rel="search" title="Search" href="search.html" /><link rel="next" title="Recording video-MEG" href="recording.html" /><link rel="prev" title="Helsinki VideoMEG Project" href="index.html" />
+<link rel="index" title="Index" href="genindex.html" /><link rel="search" title="Search" href="search.html" /><link rel="next" title="Assemble the hardware" href="hardware.html" /><link rel="prev" title="Helsinki VideoMEG Project" href="index.html" />
 
     <!-- Generated with Sphinx 8.2.3 and Furo 2024.08.06 -->
         <title>Project Overview - Helsinki VideoMEG Project documentation</title>
@@ -201,7 +201,9 @@
   <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
 <ul class="current">
 <li class="toctree-l1 current current-page"><a class="current reference internal" href="#">Project Overview</a></li>
-<li class="toctree-l1"><a class="reference internal" href="recording.html">Recording video-MEG</a></li>
+<li class="toctree-l1"><a class="reference internal" href="hardware.html">Assemble the hardware</a></li>
+<li class="toctree-l1"><a class="reference internal" href="software.html">Install the software</a></li>
+<li class="toctree-l1"><a class="reference internal" href="recording.html">Perform the recording</a></li>
 <li class="toctree-l1"><a class="reference internal" href="analyzing.html">Analyzing video-MEG</a></li>
 <li class="toctree-l1"><a class="reference internal" href="contributing.html">Contributing to the Project</a></li>
 </ul>
@@ -246,7 +248,26 @@
         <article role="main" id="furo-main-content">
           <section id="project-overview">
 <h1>Project Overview<a class="headerlink" href="#project-overview" title="Link to this heading">¶</a></h1>
-<p>Helsinki VideoMEG Project is an open-source project that aims at providing any magnetoencephalography (MEG) laboratory with a complete set of tools for conducting video-MEG examinations.</p>
+<p>Helsinki VideoMEG Project is an open-source project that aims at providing any magnetoencephalography (MEG) laboratory with a complete set of tools for adding synchronized audio and video recording to their MEG acquisition.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Contrary to what the name of the project might suggest, the tools provided by the Helsinki VideoMEG Project are not limited to MEG. They can be used in a wide variety of experimental setups, including EEG, eye-tracking, and other types of experiments that require synchronized video recording. The only requirement is that the experimental setup has a trigger input that can be connected to the parallel port output of the video recording computer for synchronization purposes.</p>
+<p>Essentially, the Helsinki VideoMEG Project allows you to build your own standalone audio/video recording system that uses machine vision cameras, records multiple video and audio streams, allows flexible audio routing, and outputs a timing signal that can be used for synchronization with other devices.</p>
+<p>Nevertheless, this documentation assumes that you are using the tools provided by the Helsinki VideoMEG Project in a MEG laboratory. Modifications to the setup to use with something other than MEG should be pretty straightforward.</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This is a further development of the original Helsinki VideoMEG Project that was reported in <a class="reference external" href="https://doi.org/10.1016/j.mex.2018.01.002">Zhdanov et al. 2018</a>. The archived version of the original repo is available <a class="reference external" href="https://github.com/Helsinki-VideoMEG-Project/Old_VideoMEG">here</a>.</p>
+</div>
+<dl class="simple">
+<dt>To start your video-MEG recordings, you need to:</dt><dd><ol class="arabic simple">
+<li><p>Assemble the video-recording hardware</p></li>
+<li><p>Install the video-recording software</p></li>
+<li><p>Do the actual recording: record MEG, video, and audio datastreams simultaneously</p></li>
+<li><p>Analyze the results: synchronize all the recorded datastreams and analyze them together</p></li>
+</ol>
+</dd>
+</dl>
 </section>
 
         </article>
@@ -254,12 +275,12 @@
       <footer>
         
         <div class="related-pages">
-          <a class="next-page" href="recording.html">
+          <a class="next-page" href="hardware.html">
               <div class="page-info">
                 <div class="context">
                   <span>Next</span>
                 </div>
-                <div class="title">Recording video-MEG</div>
+                <div class="title">Assemble the hardware</div>
               </div>
               <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
             </a>
