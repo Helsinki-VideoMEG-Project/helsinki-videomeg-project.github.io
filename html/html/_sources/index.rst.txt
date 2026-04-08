@@ -5,14 +5,13 @@
 Helsinki VideoMEG Project
 =========================
 
-This is a software for recording video and audio during MEG experiments.
-
-
 .. toctree::
    :maxdepth: 2
    :caption: Contents:
 
    overview
+   hardware
+   software
    recording
    analyzing
    contributing
